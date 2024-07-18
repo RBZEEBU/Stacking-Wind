@@ -1,0 +1,230 @@
+.light{
+    .zeebuadd{
+        h2{
+            color:$black;
+        }
+    }
+    .cardleftpanel{
+        .cardleftdetails{
+            h1, p{
+                color:$black;
+            }
+        }
+    }
+    .cardslidbox, .usercardslidbox{
+        .invitationcode, .invitationcode{
+            //@include lightglassbg;
+            border-radius: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.50);
+            background: linear-gradient(122deg, rgb(225 218 218 / 74%) 50%, rgb(223 218 218 / 40%) 100%);
+            box-shadow: 4px 4px 4px 0px rgba(255, 255, 255, 0.25) inset;
+            backdrop-filter: blur(60px);
+            .invsubtitle{
+                span, p{
+                    color:$black;
+                }
+            }
+            .invitationinput{
+                input[type=tel]{
+                    color:$black;
+                }
+            }
+            input[type=email]{
+                color:$black;
+            }
+        }
+    }
+    .dashboardwaitlistbg{
+        .dashboardwaitlist{
+            .dashtitle{
+                color:$black;
+            }
+            .cardrate{
+                .carddetails{
+                    span, p{
+                        color:$black;
+                    }
+                }
+            }
+        }
+    }
+    .cardreward{
+        .cardrewardtitle{
+            p{
+                color:$black;
+            }
+        }
+    }
+    .cardtotalreward{
+        .cardtotalbg{
+            strong,span, p{
+                color:$black;
+            }
+        }
+    }
+    .plancard{
+        span{
+            color:$black;
+        }
+        .plancarddetails{
+            strong{
+                color:$black;
+            }
+        }
+    }
+    .calculatorreward{
+        .rewardcalbox{
+            .calfrmbox{
+                color:$black;
+                label, input[type=text], span{
+                    color:$black;
+                }
+            }
+            .lockingrate{
+                label, ul li{
+                    color:$black;
+                }
+            }
+            .calbtn{
+                span{
+                    color:$black;
+                }
+            }
+            .cardProto{
+                .carddetails{
+                    span,p{
+                        color:$black;
+                    }
+                }
+            }
+            .rewardtitle{
+                color:$black;
+            }
+            .rewarddetails{
+                table, h3{
+                    color:$black;
+                }
+            }
+        }
+    }
+    .faqmain{
+        .faqtitle{
+            color:$black;
+        }
+        .accordion{
+            .accordion-item{
+                color:$black;
+            }
+           .accordion-content{
+                button{
+                    color:$black;
+                }
+           }
+        }
+    }
+    .progressheadcard{
+        .progresstitle{
+            .progress{
+                background:rgba(255, 255, 255, 0.7);
+                .progressamout{
+                    color:$black;
+                }
+            }
+            label, .progressamout{
+                color:$black;
+            }
+        }
+    }
+    .tilldate {
+        >div:nth-child(4) {
+            //background:#4052CF;
+            background:#D2D4E2;
+        }
+        >div {
+            >div {
+                >div {
+                    color: $black;
+                }
+            }
+        }
+    }
+    .referralscard{
+        .referrals{
+            span, p{
+                color: $black;
+            }
+        }
+        .activeinactive{
+            span{
+                color: $black;
+            }
+        }
+        .refinputcode{
+            input[type=text]{
+                border:1px dashed $black;
+                color:$black;
+            }
+            .copyicon{
+                color:$black;
+            }
+            button{
+                color:$black;
+                svg{
+                    color:$black;
+                }
+            }
+        }
+    }
+    .float-right{
+        color: $black;
+    }
+    .invitationcode{
+        .invitationtitle{
+            .active{
+                color: $black;
+            }
+        }
+    } 
+    .progresstitle label{
+        color: $black;
+    }
+    .leaderbox{
+        .leadertitle{
+            span, p{
+                color: $black;
+            }
+        } 
+    }
+    .leadertokenright{
+        .leadertoken{
+            border:1px solid $black;
+            p{
+                color:$black;
+            }
+        }
+    }
+    .leaderbox {
+        .resentjoin{
+            color:$black;
+        }
+    }
+    .leaderboardlist {
+        table {
+            thead {
+                 tr {
+                    th {
+                        color: $black;
+                    }
+                }
+            }
+    
+            tbody {
+                tr {
+                    td {
+                       color: $black !important;
+                    }
+                }
+            }
+        }
+    }
+}
