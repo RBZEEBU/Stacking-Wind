@@ -35,11 +35,10 @@ jobs:
 
       - name: Create tar archive of build output
         run: |
-          mkdir build-output
-          shopt -s extglob
-          cp -r !(build-output|node_modules) build-output/
-          tar -czf build-output.tar.gz -C build-output .
-          rm -rf build-output
+          New-Item -ItemType Directory -Force -Path build-output
+          Get-ChildItem -Path . -Exclude build-output,node_modules -Recurse | Copy-Item -Destination build-output -Recurse
+          Compress-Archive -Path build-output\* -DestinationPath build-output.tar.gz
+          Remove-Item -Recurse -Force build-output
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
