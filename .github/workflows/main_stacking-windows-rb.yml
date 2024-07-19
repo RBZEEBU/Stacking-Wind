@@ -35,8 +35,9 @@ jobs:
 
       - name: Create tar archive of build output
         run: |
-          mkdir -p build-output
-          cp -r * build-output/
+          mkdir build-output
+          shopt -s extglob
+          cp -r !(build-output|node_modules) build-output/
           tar -czf build-output.tar.gz -C build-output .
           rm -rf build-output
 
