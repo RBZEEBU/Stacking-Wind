@@ -32,12 +32,15 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
-      
+
+      - name: Create tar archive of build output
+        run: tar -czf build-output.tar.gz .
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: .
+          path: build-output.tar.gz
 
   deploy:
     runs-on: ubuntu-latest
@@ -51,7 +54,10 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
-      
+
+      - name: Extract tar archive
+        run: tar -xzf build-output.tar.gz
+
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
